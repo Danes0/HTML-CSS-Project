@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Danes' Pizzas</title>
+        <meta charset="utf-8">
+        <meta name="Daniela Escobar" content="Assignment 1">
+        <meta name="description" content="Web to Order Pizzas">
+        <link rel="shortcut icon" href="images/Pizza-icon.jpeg" type="image/x-icon">
+        <link rel="stylesheet" href="CSS/styles.css">
+    </head>
+	<!-- body level -->
+    <body>
+        <!--Page-level header-->
+        <header>
+            <!--Icon created in "Canva" for Daniela Escobar-->
+            <img src="images/Pizza-icon.jpeg" alt="Pizza's Logo" height="150" width="150">
+            <h1>Danes' Pizzas | Order online</h1>
+        </header>
+
+        <!--Page-level main-->
+        <main>
+            <!--Form level-->
+            <form id="order_received" action="Send.html" method="get">
+            <!--Section Page-->
+            <section>
+                <h2>Select your preference</h2>
+                <!--Size fieldset, with a radio button, legend and label-->
+                <fieldset>
+                    <legend>Size</legend>
+                    <input type="radio" name="Size" id="small" value="small">
+                    <label for="small">Small</label>
+                    <input type="radio" name="Size" id="medium" value="medium">
+                    <label for="medium">Medium</label>
+                    <input type="radio" name="Size" id="large" value="large">
+                    <label for="large">Large</label>
+                    <input type="radio" name="Size" id="exLarge" value="exLarge">
+                    <label for="exLarge">Extra Large</label>
+                </fieldset>
+
+                <!--Type of crust fieldset, with a radio button, legend and label-->
+                <fieldset>
+                    <legend>Type of Crust</legend>
+                    <input type="radio" name="TyCrust" id="reCrust" value="reCrust">
+                    <label for="reCrust">Regular Crust</label>
+                    <input type="radio" name="TyCrust" id="thinCrust" value="thinCrust">
+                    <label for="thinCrust">Thin Crust</label>
+                    <input type="radio" name="TyCrust" id="thicCrust" value="thicCrust">
+                    <label for="thicCrust">Thick Crust</label>
+                </fieldset>
+
+                <!--Cheese border fieldset, with a radio button, legend and label-->
+                <fieldset>
+                    <legend>cheese border</legend>
+                    <input type="radio" name="cBorder" id="yes" value="yes">
+                    <label for="yes">Yes</label>
+                    <input type="radio" name="cBorder" id="no" value="no">
+                    <label for="no">No</label>
+                </fieldset>
+
+                <!--Sauce fieldset, with a select element, legend and label-->
+                <fieldset>
+                    <legend>Sauce</legend>
+                    <label for="sauce">Choose the type of sauce</label>
+                    <select name="sauce" id="sauce">
+                        <option value="oPizza">Original Pizza</option>
+                        <option value="bbq">BBQ</option>
+                        <option value="ranch">Ranch</option>
+                        <option value="wPizza">White Pizza</option>
+                        <option value="none">None</option>
+                    </select>
+                </fieldset>
+
+                <!--Toppings fieldset, with legeng-->
+                <fieldset>
+                    <legend>Toppings</legend>
+                    <!--cheese section, with a radio button and label-->
+                    <p>Cheese</p>
+                    <input type="radio" name="Cheese" id="norCheese" value="norCheese">
+                    <label for="norCheese">Normal Cheese</label>
+                    <input type="radio" name="Cheese" id="eCheese" value="eCheese">
+                    <label for="eCheese">Extra Cheese</label>
+                    <input type="radio" name="Cheese" id="noCheese" value="noCheese">
+                    <label for="noCheese">No Cheese</label>
+                    <!--Meat, Vegetables section, with a check box and label-->
+                    <p>Meat</p>
+                    <input type="checkbox" name="topping[]" id="pepperoni" value="push">
+                    <label for="pepperoni">Pepperoni</label>
+                    <input type="checkbox" name="topping[]" id="bacon" value="push">
+                    <label for="bacon">Bacon</label>
+                    <input type="checkbox" name="topping[]" id="sausage" value="push">
+                    <label for="sausage">Sausage</label>
+                    <input type="checkbox" name="topping[]" id="chicken" value="push">
+                    <label for="chicken">Chicken</label>
+                    <input type="checkbox" name="topping[]" id="beef" value="push">
+                    <label for="beef">Beef</label>
+                    <input type="checkbox" name="topping[]" id="pBasedMeat" value="push">
+                    <label for="pBasedMeat">Plant Based Meat</label>
+                    <p>Vegetables</p>
+                    <input type="checkbox" name="topping[]" id="bOlives" value="push">
+                    <label for="bOlives">Black Oliver</label>
+                    <input type="checkbox" name="topping[]" id="gPeppers" value="push">
+                    <label for="gPeppers">Green Peppers</label>
+                    <input type="checkbox" name="topping[]" id="mushrooms" value="push">
+                    <label for="mushrooms">Mushrooms</label>
+                    <input type="checkbox" name="topping[]" id="onions" value="push">
+                    <label for="onions">Onions</label>
+                    <input type="checkbox" name="topping[]" id="tomatoes" value="push">
+                    <label for="tomatoes">Tomatoes</label>
+                    <input type="checkbox" name="topping[]" id="corn" value="push">
+                    <label for="corn">Corn</label>
+                    <input type="checkbox" name="topping[]" id="arugula" value="push">
+                    <label for="arugula">Arugula</label>
+                </fieldset>
+                blo
+
+                <!--Quatity fieldset, with a number type, legend and label-->
+                <fieldset>
+                    <legend>Number of pizzas</legend>
+                    <label for="nPizzas">Quantity</label>
+                    <input type="number" name="nPizzas" id="nPizzas" min="1">
+                </fieldset>
+
+                <!--Sides fieldset, with a check box, legend and label-->
+                <fieldset>
+                    <legend>Sides</legend>
+                    <input type="checkbox" name="sides[]" id="gBreadsticks" value="push">
+                    <label for="gBreadsticks">Garlic Breadsticks</label>
+                    <input type="checkbox" name="sides[]" id="cheesesticks" value="push">
+                    <label for="cheesesticks">Cheesesticks</label>
+                    <input type="checkbox" name="sides[]" id="ppBites" value="push">
+                    <label for="ppBites">Pepperoni/ Parmesan Bites</label>
+                </fieldset>
+            </section>
+
+            <!-- Page-aside -->
+            <aside>
+                <!--figure section, image created in "Canva" for Daniela Escobar, with a figcaption and emphasis-->
+                <figure>
+                    <img src="images/Pizza-photo.png" alt="Image of pizzas and ingredients" height="340" width="510" style="text-align: center;">
+                    <figcaption><small>"Pizza Design" by <em>Daniela Escobar</em> </small></figcaption>
+                </figure>
+                <!--Order Type fieldset, with a radio button, legend and label-->
+                <fieldset>
+                    <legend>Order Type</legend>
+                    <label for="TaOut">Take Out</label>
+                    <input type="radio" name="OrType" id="TaOut" value="TaOut">
+                    <label for="EatIn">Eat-In</label>
+                    <input type="radio" name="OrType" id="EatIn" value="EatIn">
+                    <label for="Delivery">Delivery</label>
+                    <input type="radio" name="OrType" id="Delivery" value="Delivery">
+                </fieldset>
+
+                <!--Contact Information fieldset, with a text boxes, label, legend, required and placeholder attributes-->
+                <fieldset>
+                    <legend>Contact Information</legend>
+                        <div>
+                            <label for="fName">Full Name</label>
+                            <input type="text" name="fName" id="fName" size="50" maxlength="50" placeholder="Type your full name here" required>
+                        </div>
+                        <div>
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" size="50" placeholder="Type your email" required>
+                        </div>
+                        <div>
+                            <label for="phone">Phone</label>
+                            <input type="tel" name="phone" id="phone" size="50" placeholder="(xxx)xxx-xxx" required>
+                        </div>
+                        <div>
+                            <label for="address">Address</label>
+                            <input type="text" name="address" id="address" size="50" placeholder="Type your address, with a postal code" required>
+                        </div>
+                        <!--Other comments, with a textarea element and labels-->
+                        <div>
+                            <label for="sIntructions">Special instruccions</label>
+                            <textarea name="sIntructions" id="sIntructions" cols="48" rows="2" placeholder="Add any other comments"></textarea>
+                        </div>
+                    </fieldset>
+
+                <!--Slogan section-->
+                <h3>Prepared with passion, <br>served with love.</h3>
+            </aside>
+
+                <!-- button configuration, for reset and submit with a margin right -->
+            <button type="reset" style="margin-right: 20px;">Reset</button>
+            <button type="submit" style="margin-right: 20px;">Submit</button>
+            </form>
+        </main>
+
+        <!--Page-level footer-->
+        <footer>
+            <small>© Danes' pizzas.</small>
+        </footer>
+    </body>
+</html>
